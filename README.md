@@ -36,24 +36,24 @@ Clone the repository to your local machine:
 git clone <repo-url>
 cd iConnect
 
-# Create a virtual environment
+### Create a virtual environment
 python -m venv venv
 
-# Activate the virtual environment
-# On Windows
+### Activate the virtual environment
+#### On Windows
 venv\Scripts\activate
-# On macOS/Linux
+#### On macOS/Linux
 source venv/bin/activate
 
-#Install Dependencies
+###Install Dependencies
 pip install -r requirements.txt
 
-#Environment Variables
+###Environment Variables
 MONGO_URL=<YOUR_URL>
 DATABASE_NAME=<DB_NAME>
 JWT_SECRET_KEY=<KEY>
 
-#Run the Application
+###Run the Application
 python main.py
 
 Visit http://localhost:8000/docs in your browser to access the Swagger UI and explore the API endpoints.
