@@ -40,9 +40,9 @@ cd iConnect
 python -m venv venv
 
 ### Activate the virtual environment
-#### On Windows
+### On Windows
 venv\Scripts\activate
-#### On macOS/Linux
+### On macOS/Linux
 source venv/bin/activate
 
 ###Install Dependencies
