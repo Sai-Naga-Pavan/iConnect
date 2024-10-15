@@ -40,15 +40,15 @@ cd iConnect
 python -m venv venv
 
 ### Activate the virtual environment
-### On Windows
+On Windows
 venv\Scripts\activate
-### On macOS/Linux
+On macOS/Linux
 source venv/bin/activate
 
-###Install Dependencies
+Install Dependencies
 pip install -r requirements.txt
 
-###Environment Variables
+Environment Variables
 MONGO_URL=<YOUR_URL>
 DATABASE_NAME=<DB_NAME>
 JWT_SECRET_KEY=<KEY>
