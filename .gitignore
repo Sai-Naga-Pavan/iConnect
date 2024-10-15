@@ -1,0 +1,14 @@
+# Ignore static folder
+static/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment files
+.env
+
+# Ignore virtual environment
+venv/
