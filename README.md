@@ -49,9 +49,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ### Environment Variables
-MONGO_URL=<YOUR_URL>
-DATABASE_NAME=<DB_NAME>
-JWT_SECRET_KEY=<KEY>
+MONGO_URL, DATABASE_NAME, JWT_SECRET_KEY
 
 ### Run the Application
 python main.py
