@@ -10,6 +10,7 @@ iConnect is a social media application that allows users to follow each other, u
 - **Likes and Comments**: Users can like and comment on posts shared by others.
 - **Real-time Chat**: Users can chat with each other in real time.
 - **Notifications**: Users receive notifications for relevant actions, such as new likes, comments, and follow requests.
+- **Chat Bot** : Users can chat with Ai chat bot which supports image generation also.
 
 ## Technologies
 
@@ -19,6 +20,9 @@ iConnect is a social media application that allows users to follow each other, u
 - JWT for authentication
 - WebSockets for real-time notifications
 - MongoDB
+- Hugging Face
+- black-forest-labs/FLUX.1-dev (LLM for image generation)
+- facebook/blenderbot-400M-distill (LLM for text generation)
 
 ## Setup
 
@@ -49,7 +53,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ### Environment Variables
-MONGO_URL, DATABASE_NAME, JWT_SECRET_KEY
+MONGO_URL, DATABASE_NAME, JWT_SECRET_KEY, HF_TOKEN
 
 ### Run the Application
 python main.py
