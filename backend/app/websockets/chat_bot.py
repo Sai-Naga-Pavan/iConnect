@@ -12,8 +12,8 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 
 llm_client_chat = InferenceClient(
     model="facebook/blenderbot-400M-distill",
-    token=HF_TOKEN,  # Authentication token
-    timeout=120,     # Set a timeout for requests
+    token=HF_TOKEN, 
+    timeout=120,     
 )
 
 llm_client_image = InferenceClient(
@@ -22,7 +22,7 @@ llm_client_image = InferenceClient(
     timeout=120
 )
 
-image_keywords = ["image", "create", "draw", "picture", "photo", "generate", "make"]
+image_keywords = ["image", "create", "draw", "picture", "photo"]
 
 def detect_intent(user_message):
     if any(keyword in user_message.lower() for keyword in image_keywords):
@@ -60,7 +60,6 @@ async def call_image_model(prompt: str):
             },
         )
         
-        print(response)
         image_base64 = base64.b64encode(response).decode("utf-8")
 
         # Create a data URI for the image
